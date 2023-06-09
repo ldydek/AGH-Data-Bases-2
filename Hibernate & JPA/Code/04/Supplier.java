@@ -15,7 +15,7 @@ public class Supplier {
     private String city;
 
     @OneToMany
-    @JoinColumn(name="supplierID")
+    @JoinColumn(name = "supplierID")
     private final List<Product> products = new ArrayList<>();
 
     public Supplier() {}
