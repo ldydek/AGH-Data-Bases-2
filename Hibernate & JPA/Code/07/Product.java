@@ -22,9 +22,7 @@ public class Product {
     private Category category;
 
     @ManyToMany
-    @JoinTable(name = "invoice_details",
-            joinColumns = @JoinColumn(name = "invoiceNumber"),
-            inverseJoinColumns = @JoinColumn(name = "productID"))
+    @JoinTable(name = "invoice_details")
     private List<Invoice> invoices;
 
     public Product() {}
